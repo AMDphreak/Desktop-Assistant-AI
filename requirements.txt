@@ -1,0 +1,13 @@
+pillow
+pyttsx3
+openai
+logging
+PyQt5
+python-dotenv
+openai-whisper
+torch
+torchvision
+torchaudio
+usersettings
+pyaudio
+silero-vad
