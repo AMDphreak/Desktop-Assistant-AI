@@ -29,11 +29,14 @@ class ModelLoaderThread(QThread):
                 self.sleep(1)  # Simulate time for each step
 
             # Load the actual Whisper model securely
-            model = whisper.load_model("base", download_root=None, in_memory=False, weights_only=True)
+            model = whisper.load_model("base")
             self.progress_update.emit(100, "Model loaded successfully!")
             self.finished_loading.emit(model)
 
         except Exception as e:
+            import logging
+            logging.basicConfig(filename='debug.log', level=logging.DEBUG)
+            logging.error(f"Exception in Whisper model loading: {e}", exc_info=True)
             self.finished_loading.emit(None)
             self.progress_update.emit(100, f"Error loading model: {e}")
 
