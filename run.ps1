@@ -8,7 +8,7 @@ if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
 }
 
 # Check if running inside a virtual environment
-$venvCheck = python -c "import sys; print(hasattr(sys, 'real_prefix') or (hasattr(sys, 'base_prefix') and sys.base_prefix -ne sys.prefix))"
+$venvCheck = python -c "import sys; print(hasattr(sys, 'real_prefix') or (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix))"
 if ($venvCheck -ne 'True') {
     Write-Host "ERROR: You must activate your Python virtual environment before running this app."
     Write-Host "To activate, run: .venv\Scripts\Activate.ps1"
