@@ -29,11 +29,15 @@ class AppManager:
         """
         Handles the completion of model loading.
         """
+        import logging
+        logging.basicConfig(filename='debug.log', level=logging.DEBUG)
         self.loading_screen.close()
         if model is not None:
+            logging.debug("Model loaded successfully, showing main window.")
             self.main_window = MainWindow(model)
             self.main_window.show()
         else:
+            logging.error("Model is None. Showing error window.")
             error_message = QLabel("Failed to load the Whisper model. Please try again later.")
             error_message.setAlignment(Qt.AlignCenter)
             error_window = QMainWindow()
@@ -41,7 +45,6 @@ class AppManager:
             error_window.setWindowTitle("Error")
             error_window.setFixedSize(400, 200)
             error_window.show()
-        self.app.exec_()
 
 
 # Run Application
