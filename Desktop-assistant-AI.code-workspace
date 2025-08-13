@@ -1,0 +1,53 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.wrappingIndent": "same",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": true
+    },
+    "markdownlint.config": {
+      "default": true,
+      "MD007": { "indent": 2 },
+      "MD013": false,
+      "MD033": false
+    },
+    "prettier.proseWrap": "never",
+    "[markdown]": {
+      "editor.wordWrap": "on",
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "explicit"
+      }
+    },
+    "markdown.extension.list.indentationSize": "inherit",
+    "scm.alwaysShowRepositories": true,
+    "scm.providerCountBadge": "auto",
+    "workbench.colorCustomizations": {
+      "mergeEditor.conflict.unhandledFocused.border": "#00945b",
+      "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
+    },
+    "git.closeDiffOnOperation": true
+  },
+  "extensions": {
+    "recommendations": [
+      "yzhang.markdown-all-in-one",
+      "dbaeumer.vscode-eslint",
+      "loiane.ts-extension-pack",
+      "esbenp.prettier-vscode",
+      "github.vscode-pull-request-github",
+      "bierner.markdown-mermaid",
+      "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+      "henoc.svgeditor",
+      "mhutchie.git-graph",
+      "eamodio.gitlens"
+    ]
+  }
+}
