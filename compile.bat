@@ -48,7 +48,7 @@ if /i "!user_choice!"=="y" (
 :compile
 :: Debug Breakpoint: Compile Python files
 echo [DEBUG] Compiling Python files...
-python -m compileall .\src >nul 2>nul
+python -m compileall -q src
 if %errorlevel% neq 0 (
     echo [DEBUG] Compilation failed.
     echo Compilation failed. Please check for errors in your Python scripts.
@@ -58,4 +58,3 @@ if %errorlevel% neq 0 (
 echo [DEBUG] Compilation successful.
 echo Compilation successful.
 pause
-/
