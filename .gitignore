@@ -1,4 +1,5 @@
 .env
-*.log
+**/*.log
 __pycache__
 temp/
+dist/*
