@@ -33,10 +33,11 @@ Installation sets up and runs the app in the current folder as a stand-alone app
    pip install -r requirements.txt
    ```
 
-4. Run the installer:
+4. Compile and run the app using PowerShell scripts:
 
-   ```sh
-   run.bat
+   ```powershell
+   .\compile.ps1
+   .\run.ps1
    ```
 
    This will check for Python and run the compiled application.
@@ -86,3 +87,9 @@ MIT License (see LICENSE file if present)
 
 - AMDphreak (Author)
 - OpenAI, Whisper, PyQt5, Pillow, pyttsx3, python-dotenv
+
+## Screenshots
+
+v0.1 - Early days screenshot
+
+![screenshot1](<v0.1_screenshot_20241120_123944.png>)
