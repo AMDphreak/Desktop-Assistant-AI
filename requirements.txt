@@ -1,5 +1,5 @@
 pillow
-pyttsx3
+TTS
 openai
 logging
 PyQt5
@@ -11,3 +11,9 @@ torchaudio
 usersettings
 pyaudio
 silero-vad
+psutil
+numpy
+scipy
+soundfile
+sounddevice
+librosa
