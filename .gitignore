@@ -8,6 +8,7 @@
 temp/
 # our code creates wav files
 **/*.wav
+**/user_settings.json
 
 #■■■■■■■■■■■■■■■■■■■■■■
 # GENERAL
