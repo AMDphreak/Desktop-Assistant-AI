@@ -2,9 +2,6 @@ from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QProgressBar, QLabel
 import whisper
 
-
-import whisper
-
 class ModelLoaderThread(QThread):
     """
     Thread for loading the Whisper model.
